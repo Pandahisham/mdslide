@@ -2,48 +2,69 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>mdSlide by yhatt</title>
+    <title>mdSlide - The simplest Markdown presentation tool</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/yhatt/mdslide/master/images/mdslide.png" type="image/png"/>
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">mdSlide</h1>
+      <h1 class="project-name">
+        mdSlide
+        <img src="https://raw.githubusercontent.com/yhatt/mdslide/master/images/mdslide.png" alt="mdSlide icon">
+      </h1>
+      
       <h2 class="project-tagline">The simplest presentation creating tool with Markdown</h2>
-      <a href="https://github.com/yhatt/mdslide" class="btn">View on GitHub</a>
-      <a href="https://github.com/yhatt/mdslide/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/yhatt/mdslide/tarball/master" class="btn">Download .tar.gz</a>
+      <p>
+        <img src="https://raw.githubusercontent.com/yhatt/mdslide/master/screenshot.png" alt="mdSlide" style="max-width:100%; height:auto;">
+      </p>
+      <p style="opacity:0.8; font-size:0.9rem;">Supports Windows (x86, x64), Mac OS X and Linux (x86, x64).</p>
+      <a href="https://github.com/yhatt/mdslide/releases" class="btn">
+        Download latest release
+        &ensp;<i class="fa fa-chevron-right"></i>
+      </a>
+      <p>
+        <small>
+          mdSlide is pre-release currently.&emsp;
+          <a href="https://github.com/yhatt/mdslide/">
+            <i class="fa fa-github"></i>
+            Source code on GitHub
+          </a>
+        </small>
+      </p>
     </section>
-
     <section class="main-content">
-      <p><img src="https://raw.githubusercontent.com/yhatt/mdslide/master/screenshot.png" alt="mdSlide"></p>
+      <p><strong>mdSlide</strong> is the simplest presentation creating tool, with using <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>.</p>
+      <p>You can "write" the presentation with like a feeling of Markdown editor.</p>
 
-<p><strong>mdSlide</strong> is the simplest presentation creating tool, with using <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>.</p>
+      <h2>
+        <a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+        Features
+      </h2>
 
-<p>You can "write" the presentation with like a feeling of Markdown editor.</p>
+      <ul>
+        <li><strong>Create presentation slides by <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a></strong></li>
+        <li>Cross-platform (Supported Windows, Mac OS X and Linux)</li>
+        <li>Live preview with 3 modes (Markdown, 1:1 slide and list view)</li>
+        <li>Export slides as PDF</li>
+        <li>The most simple slide theme, based on GitHub style</li>
+      </ul>
 
-<h2>
-<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
+      <h2>
+        <a id="how-to-write-slides" class="anchor" href="#how-to-write-slides" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+        How to write slides?
+      </h2>
 
-<ul>
-<li><strong>Create presentation slides by <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a></strong></li>
-<li>Cross-platform (Supported Windows, Mac OS X and Linux)</li>
-<li>Live preview with 3 modes (Markdown, 1:1 slide and list view)</li>
-<li>Export slides as PDF</li>
-<li>The most simple slide theme, based on GitHub style</li>
-</ul>
+      <p>A basically text format is based on <a href="https://guides.github.com/features/mastering-markdown/">Github Flavored Markdown</a>.</p>
+      <p>The mdSlide has tiny change of horizontal ruler to create multi-page presentation. You can split page of presentation by <code>---</code>. This format is similar to <a href="http://www.decksetapp.com/">Deckset</a>.</p>
 
-<h2>
-<a id="how-to-write-slides" class="anchor" href="#how-to-write-slides" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to write slides?</h2>
-
-<p>A basically text format is based on <a href="https://guides.github.com/features/mastering-markdown/">Github Flavored Markdown</a>.</p>
-
-<p>The mdSlide has tiny change of horizontal ruler to create multi-page presentation. You can split page of presentation by <code>---</code> (This format is similar to <a href="http://www.decksetapp.com/">Deckset</a>).</p>
-
-<div class="highlight highlight-source-gfm"><pre><span class="pl-mh"><span class="pl-mh">#</span><span class="pl-mh"> </span>Slide 1</span>
+      <div class="highlight highlight-source-gfm">
+        <pre>
+<span class="pl-mh"><span class="pl-mh">#</span><span class="pl-mh"> </span>Slide 1</span>
 
 foobar
 
@@ -51,34 +72,34 @@ foobar
 
 <span class="pl-mh"><span class="pl-mh">#</span><span class="pl-mh"> </span>Slide 2</span>
 
-foobar</pre></div>
+foobar</pre>
+      </div>
 
-<p>Please refer <a href="https://raw.githubusercontent.com/yhatt/mdslide/master/example.md">the slide example</a>.</p>
+      <p>Please refer <a href="https://raw.githubusercontent.com/yhatt/mdslide/master/example.md">the slide example</a>.</p>
+    
+      <h2>
+        <a id="licenses" class="anchor" href="#licenses" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+        Licenses
+      </h2>
 
-<h2>
-<a id="licenses" class="anchor" href="#licenses" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Licenses</h2>
-
-<p>Copyright © 2016 <a href="https://github.com/yhatt">Yuki Hattori</a>.
-This software released under the <a href="https://opensource.org/licenses/mit-license.php">MIT License</a>.</p>
+      <p>Copyright © 2016 <a href="https://github.com/yhatt">Yuki Hattori</a>.</p>
+      <p><small>This software released under the <a href="https://opensource.org/licenses/mit-license.php">MIT License</a>.</small></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/yhatt/mdslide">mdSlide</a> is maintained by <a href="https://github.com/yhatt">yhatt</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+        <span class="site-footer-credits">This page was based on the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a> on <a href="https://pages.github.com">GitHub Pages</a>.</span>
       </footer>
-
     </section>
 
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-74360485-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-74360485-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
   </body>
 </html>
