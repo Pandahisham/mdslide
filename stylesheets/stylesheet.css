@@ -76,7 +76,7 @@ a {
   top: 0;
   right: 0;
   bottom: 0;
-  background-image: url("http://www.transparenttextures.com/patterns/egg-shell.png"); }
+  background-image: url("./egg-shell.png"); }
 
 @media screen and (min-width: 64em) {
   .page-header {
