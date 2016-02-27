@@ -19,7 +19,7 @@ a {
   display: inline-block;
   margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: #577EC2;
   border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
   border-width: 1px;
@@ -31,7 +31,7 @@ a {
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #7998CE;
   border-color: rgba(255, 255, 255, 0.3); }
 
 @media screen and (min-width: 64em) {
@@ -54,13 +54,29 @@ a {
       margin-left: 0; } }
 
 .page-header {
+  z-index: 0;
   color: #fff;
   text-align: center;
-  background-color: #7474BF;
-  background-image: linear-gradient(120deg, #348AC7, #7474BF); }
+  position: relative;
+  background-color: #358AC7;
+  background-image: linear-gradient(120deg, #348AC7, #7474BF);
+  text-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);}
+  .page-header * {
+    position: relative;
+    z-index: 1; }
   .page-header a {
     color: inherit;
     opacity: 0.7; }
+
+.page-header-texture {
+  z-index: 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("http://www.transparenttextures.com/patterns/egg-shell.png"); }
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -124,7 +140,8 @@ a {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #7474BF; }
+  color: #7474BF;
+  text-shadow: 0 1px 2px rgba(116, 116, 191, 0.3); }
 .main-content p {
   margin-bottom: 1em; }
 .main-content code {
