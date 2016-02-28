@@ -7,7 +7,8 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  color: #606c71;
+  overflow-x: hidden; }
 
 a {
   color: #1e6bb8;
@@ -24,6 +25,7 @@ a {
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,0.15);
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
   .btn + .btn {
     margin-left: 1rem; }
@@ -54,41 +56,31 @@ a {
       margin-left: 0; } }
 
 .page-header {
-  z-index: 0;
   color: #fff;
   text-align: center;
   position: relative;
-  background-color: #358AC7;
+  margin: 0 -1rem;
+  background-color: #577EC2;
+  background-image: url('./egg-shell.png');
   background-image: linear-gradient(120deg, #348AC7, #7474BF);
-  text-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);}
-  .page-header * {
-    position: relative;
-    z-index: 1; }
+  background: url('./egg-shell.png'), linear-gradient(120deg, #348AC7, #7474BF);
+  text-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -0.5rem 2rem rgba(0,0,0,0.25), 0 1rem 1rem #ddd; }
   .page-header a {
     color: inherit;
     opacity: 0.7; }
 
-.page-header-texture {
-  z-index: 0;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("./egg-shell.png"); }
-
 @media screen and (min-width: 64em) {
   .page-header {
-    padding: 5rem 6rem; } }
+    padding: 5rem 7rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
-    padding: 3rem 4rem; } }
+    padding: 3rem 5rem; } }
 
 @media screen and (max-width: 42em) {
   .page-header {
-    padding: 2rem 1rem; } }
+    padding: 2rem 2rem; } }
 
 .project-name {
   margin-top: 0;
