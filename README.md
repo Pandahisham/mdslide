@@ -1,3 +1,11 @@
+# mdSlide has been re-named to [Marp](https://github.com/yhatt/marp/) !
+
+[![](https://raw.githubusercontent.com/yhatt/marp/master/images/marp.png)](https://github.com/yhatt/marp/)
+
+> NOTICE: THIS REPOSITORY IS NO LONGER USED.
+
+---
+
 mdSlide
 ===
 
@@ -9,11 +17,7 @@ mdSlide
 
 ### Install
 
-:arrow_forward: **[Download latest archives from release page.](https://github.com/yhatt/mdslide/releases)**
-
-- **Windows**: Unzip `*.*.*-mdSlide-win32-[arch].zip` and run `mdSlide.exe`.
-- **Mac OS X**: Mount `*.*.*-mdSlide-darwin-x64.dmg`, D&D `mdSlide` to `Applications` and run it from Applications folder / Launchpad.
-- **Linux**: Unpack `*.*.*-mdSlide-linux-[arch].tar.gz` and run `mdSlide`.
+Please refer releases page of [Marp](https://github.com/yhatt/marp/releases). *Do you want [mdSlide's older releases?](https://github.com/yhatt/mdslide/releases)*
 
 ### How to write slides?
 
